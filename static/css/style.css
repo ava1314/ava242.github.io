@@ -1,0 +1,157 @@
+.semester-select,
+.title-bar {
+    margin-bottom: 15px
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    background: #fff
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch
+}
+
+table {
+    min-width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap
+}
+
+td,
+th {
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    min-width: 60px
+}
+
+th {
+    background: linear-gradient(to bottom, #f5f5f5, #eee);
+    font-weight: 400;
+    position: sticky;
+    top: 0;
+    background-color: #f5f5f5
+}
+
+.header {
+    background: linear-gradient(to bottom, #06c, #005bac);
+    color: #fff;
+    padding: 5px 10px;
+    text-align: right;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px
+}
+
+.container {
+    display: flex;
+    height: calc(100% - 30px)
+}
+
+.nav {
+    width: 150px;
+    background: #f0f0f0;
+    border-right: 1px solid #ccc
+}
+
+.nav-item {
+    cursor: pointer;
+    padding: 8px 15px;
+    background: #3982c6;
+    color: #fff;
+    border-bottom: 1px solid #2d6ba1
+}
+
+.sub-nav-item {
+    cursor: pointer;
+    padding: 8px 15px 8px 25px;
+    background: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    color: #000
+}
+
+.content {
+    flex: 1;
+    padding: 20px
+}
+
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 700
+}
+
+.print-btn {
+    background: linear-gradient(to bottom, #fff, #f0f0f0);
+    border: 1px solid #ccc;
+    padding: 3px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px
+}
+
+.red {
+    color: red
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        flex-direction: column
+    }
+
+    .nav {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        overflow-x: auto;
+        white-space: nowrap
+    }
+
+    .nav-item,
+    .sub-nav-item {
+        display: inline-block;
+        padding: 8px 15px
+    }
+
+    .content {
+        padding: 10px
+    }
+
+    .table-container {
+        margin: 0 -10px;
+        padding: 0 10px
+    }
+
+    .title-bar {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .print-btn {
+        margin-top: 10px
+    }
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important
+}
